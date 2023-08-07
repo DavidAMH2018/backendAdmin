@@ -99,7 +99,7 @@ public class RequestService {
                     res = requestDTOs;
                 }
                 case "idJefe" -> {
-                    List<Object[]> resultsJefe = this.requestRepository.getAllRequestsInfoWithEmployerFilter(Integer.parseInt(parts[1]));
+                    List<Object[]> resultsJefe = this.requestRepository.getAllRequestsInfoWithBossFilter(Integer.parseInt(parts[1]));
                     List<RequestDTO> requestDTOsJefe = resultsJefe.stream().map(result -> {
                         Request request = (Request) result[0];
                         String tipoSolicitud = (String) result[1];
