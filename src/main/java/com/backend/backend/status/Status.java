@@ -29,7 +29,8 @@ public class Status {
     private Long idEstado;
     @Column(name = "descripcion")
     private String descripcion;
-
+    @Column(name = "status", columnDefinition = "integer default 0")
+    private int status = 0;
     @OneToMany(mappedBy = "status")
     private List<Request> requests;
     
@@ -58,5 +59,13 @@ public class Status {
 
     public String getDescripcion() {
         return descripcion;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+    
+    public int getStatus() {
+        return status;
     }
 }

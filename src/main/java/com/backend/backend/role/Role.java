@@ -29,7 +29,8 @@ public class Role {
     private String nombre;
     @Column(name = "permisos")
     private String permisos;
-
+    @Column(name = "status", columnDefinition = "integer default 0")
+    private int status = 0;
     
     public Role() {}
     
@@ -66,5 +67,13 @@ public class Role {
 
     public String getPermisos() {
         return permisos;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+    
+    public int getStatus() {
+        return status;
     }
 }

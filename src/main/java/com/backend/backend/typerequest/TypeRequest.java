@@ -32,7 +32,8 @@ public class TypeRequest {
     private String nombre;
     @Column(name = "Descripcion")
     private String Descripcion;
-    
+    @Column(name = "status", columnDefinition = "integer default 0")
+    private int status = 0;
     @OneToMany(mappedBy = "typeRequest")
     private List<Request> requests;
     
@@ -73,5 +74,11 @@ public class TypeRequest {
         return Descripcion;
     }
     
+    public void setStatus(int status) {
+        this.status = status;
+    }
     
+    public int getStatus() {
+        return status;
+    }
 }

@@ -41,8 +41,8 @@ public class Const {
         langCode.put(LangCode.msg_id_vacio, "Id del empleado vacio!.");  
         langCode.put(LangCode.msg_create_position, "Cargo creado con exito."); 
         langCode.put(LangCode.msg_update_position, "Cargo actualizado con exito.");     
-        langCode.put(LangCode.msg_create_area, "Area creada con exito."); 
-        langCode.put(LangCode.msg_update_area, "Area actualizada con exito."); 
+        langCode.put(LangCode.msg_create_area, "Área creada con exito."); 
+        langCode.put(LangCode.msg_update_area, "Área actualizada con exito."); 
         langCode.put(LangCode.msg_create_request, "Solicitud creada con exito."); 
         langCode.put(LangCode.msg_update_request, "Solicitud actualizada con exito."); 
         langCode.put(LangCode.msg_create_typerequest, "Tipo Solicitud creada con exito."); 
