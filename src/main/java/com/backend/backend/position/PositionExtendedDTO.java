@@ -18,10 +18,11 @@ public class PositionExtendedDTO {
     
     public PositionExtendedDTO(){}
     
-    public PositionExtendedDTO(Long idCargo, String Descripcion, String area) {
+    public PositionExtendedDTO(Long idCargo, String Descripcion, String area, int status) {
         this.idCargo = idCargo;
         this.Descripcion = Descripcion;
         this.area = area;
+        this.status = status;
     }
 
     public void setIdCargo(Long idCargo) {

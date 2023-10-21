@@ -41,6 +41,7 @@ public class PositionService {
                 dto.setIdCargo(position.getIdCargo());
                 dto.setDescripcion(position.getDescripcion());
                 dto.setArea(descripcion);
+                dto.setStatus(position.getStatus());
 
                 return new PositionDTO(position, dto);
             }).collect(Collectors.toList());

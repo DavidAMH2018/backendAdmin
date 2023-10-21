@@ -91,12 +91,4 @@ public class Position {
     public int getIdArea() {
         return idArea;
     }
-    
-    public void setStatus(int status) {
-        this.status = status;
-    }
-    
-    public int getStatus() {
-        return status;
-    }
 }

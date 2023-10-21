@@ -30,8 +30,8 @@ public class TypeRequest {
     private Long idTipoSolicitud;
     @Column(name = "nombre")
     private String nombre;
-    @Column(name = "Descripcion")
-    private String Descripcion;
+    @Column(name = "descripcion")
+    private String descripcion;
     @Column(name = "status", columnDefinition = "integer default 0")
     private int status = 0;
     @OneToMany(mappedBy = "typeRequest")
@@ -39,15 +39,15 @@ public class TypeRequest {
     
     public TypeRequest() {}
     
-    public TypeRequest(Long idTipoSolicitud, String nombre, String Descripcion) {
+    public TypeRequest(Long idTipoSolicitud, String nombre, String descripcion) {
         this.idTipoSolicitud = idTipoSolicitud;
         this.nombre = nombre;
-        this.Descripcion = Descripcion;
+        this.descripcion = descripcion;
     }
     
-    public TypeRequest(String nombre, String Descripcion) {
+    public TypeRequest(String nombre, String descripcion) {
         this.nombre = nombre;
-        this.Descripcion = Descripcion;
+        this.descripcion = descripcion;
     }
 
     public void setIdTipoSolicitud(Long idTipoSolicitud) {
@@ -58,8 +58,8 @@ public class TypeRequest {
         this.nombre = nombre;
     }
 
-    public void setDescripcion(String Descripcion) {
-        this.Descripcion = Descripcion;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public Long getIdTipoSolicitud() {
@@ -71,7 +71,7 @@ public class TypeRequest {
     }
 
     public String getDescripcion() {
-        return Descripcion;
+        return descripcion;
     }
     
     public void setStatus(int status) {
