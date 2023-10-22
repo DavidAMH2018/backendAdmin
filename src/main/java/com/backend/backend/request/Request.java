@@ -70,7 +70,7 @@ public class Request {
     
     public Request(){}
     
-    public Request(Long idSolicitud, int idEmpleador, int idJefe, Date fechaInicial, Date fechaFinal, int totalDias, int totalHoras, String observacion, int idEstado, TypeRequest typeRequest) {
+    public Request(Long idSolicitud, int idEmpleador, int idJefe, Date fechaInicial, Date fechaFinal, int totalDias, int totalHoras, String observacion, int idEstado, TypeRequest typeRequest, int idTipoSolicitud) {
         this.idSolicitud = idSolicitud;
         this.idEmpleador = idEmpleador;
         this.idJefe = idJefe;
@@ -80,10 +80,11 @@ public class Request {
         this.totalHoras = totalHoras;
         this.observacion = observacion;
         this.idEstado = idEstado;
+        this.idTipoSolicitud = idTipoSolicitud;
         this.typeRequest = typeRequest;
     }
 
-    public Request(int idEmpleador, int idJefe, Date fechaInicial, Date fechaFinal, int totalDias, int totalHoras, String observacion, int idEstado) {
+    public Request(int idEmpleador, int idJefe, Date fechaInicial, Date fechaFinal, int totalDias, int totalHoras, String observacion, int idEstado, int idTipoSolicitud) {
         this.idEmpleador = idEmpleador;
         this.idJefe = idJefe;
         this.fechaInicial = fechaInicial;
@@ -92,6 +93,7 @@ public class Request {
         this.totalHoras = totalHoras;
         this.observacion = observacion;
         this.idEstado = idEstado;
+        this.idTipoSolicitud = idTipoSolicitud;
     }
     
     public void setIdSolicitud(Long idSolicitud) {
@@ -129,6 +131,10 @@ public class Request {
     public void setIdEstado(int idEstado) {
         this.idEstado = idEstado;
     }
+
+    public void setIdTipoSolicitud(int idTipoSolicitud) {
+        this.idTipoSolicitud = idTipoSolicitud;
+    }
     
     public Long getIdSolicitud() {
         return idSolicitud;
@@ -164,5 +170,9 @@ public class Request {
 
     public int getIdEstado() {
         return idEstado;
+    }
+
+    public int getIdTipoSolicitud() {
+        return idTipoSolicitud;
     }
 }

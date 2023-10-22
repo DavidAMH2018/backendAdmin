@@ -55,7 +55,7 @@ public class UserService {
         
         String enctyptPasssoword =  this.passwordEncoder.encode(user.getContrasena());
         user.setContrasena(enctyptPasssoword);
-        
+        user.setIdRol(1);
         this.userRepository.save(user);
         
         return new ResponseEntity<>(

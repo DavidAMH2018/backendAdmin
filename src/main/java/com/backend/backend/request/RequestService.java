@@ -56,7 +56,6 @@ public class RequestService {
                 dto.setNombreEmpleado(nombreEmpleado);
                 dto.setNombreJefe(nombreJefe);
                 
-
                 return new RequestDTO(request, dto);
             }).collect(Collectors.toList());
             
