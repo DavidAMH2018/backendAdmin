@@ -34,7 +34,7 @@ public class User {
     @Column(name = "idRol", columnDefinition = "integer default 1")
     private int idRol;
     @Column(name = "status", columnDefinition = "integer default 0")
-    private int status = 0;
+    private int status;
     
     public User(){};
 
