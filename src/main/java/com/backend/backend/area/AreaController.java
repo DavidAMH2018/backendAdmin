@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Administrador
  */
 
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin("*")
 @RestController
 @RequestMapping(path = "api/" + Const.VERSION + "/area")
 public class AreaController {
